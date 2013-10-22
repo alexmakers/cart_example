@@ -10,5 +10,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_cart
+    Cart.find session[:cart_id]
   end
 end

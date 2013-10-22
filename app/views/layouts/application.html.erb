@@ -8,7 +8,10 @@
 </head>
 <body>
 
+<div class='item_count'>
+  <%= pluralize current_cart.count, 'item' %>
 </div>
+
 <%= yield %>
 
 </body>

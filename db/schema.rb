@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 20131022085832) do
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -21,6 +22,9 @@
     t.integer "cart_id"
     t.integer "product_id"
   end
+
+  add_index "carts_products", ["cart_id"], name: "index_carts_products_on_cart_id", using: :btree
+  add_index "carts_products", ["product_id"], name: "index_carts_products_on_product_id", using: :btree
 
   create_table "products", force: true do |t|
     t.string   "name"
