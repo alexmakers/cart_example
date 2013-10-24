@@ -42,3 +42,8 @@ RSpec.configure do |config|
   config.order = "random"
   config.include FactoryGirl::Syntax::Methods
 end
+
+def emails
+  ActionMailer::Base.deliveries
+end
+
