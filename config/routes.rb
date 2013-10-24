@@ -1,5 +1,6 @@
 EcommerceExample::Application.routes.draw do
 
+  resources :charges
   resources :products
   resources :carts
 

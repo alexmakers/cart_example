@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'paperclip'
 gem 'aws-sdk'
 
+gem 'stripe'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
